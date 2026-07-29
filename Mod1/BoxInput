@@ -1,0 +1,27 @@
+package OOPS26;
+import java.util.Scanner;
+class BoxDemo {
+	double width, height,depth;
+	double volume() {
+		return(width*height*depth);
+	}
+	
+	}
+
+
+public class BoxInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+		BoxDemo m=new BoxDemo();
+		System.out.println("Enter the parameters");
+		m.width=sc.nextInt();
+		m.height=sc.nextInt();
+		m.depth=sc.nextInt();
+		double vol=m.volume();
+		System.out.println(vol);
+
+	}
+
+}
