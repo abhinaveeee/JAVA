@@ -1,0 +1,30 @@
+package OOPS26;
+import java.util.Scanner;
+class m{
+	double mark1,mark2,mark3;
+	 m(double m1,double m2, double m3) {
+		 mark1=m1;
+		 mark2=m2;
+		 mark3=m3;}
+	 void calc() {
+		 System.out.println("Total marks is"+ (mark1+mark2+mark3));
+		 System.out.println("Average marks is"+ (mark1+mark2+mark3)/3);
+	 }}
+public class marks {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ Scanner sc= new Scanner(System.in);
+ System.out.println("Enter the mark 1");
+ double n=sc.nextDouble();
+ System.out.println("Enter the mark 2");
+ double m=sc.nextDouble();
+ System.out.println("Enter the mark 3");
+ double o=sc.nextDouble();
+ m c= new m(n,m,o);
+ c.calc();
+ 
+ 
+	}
+
+}
