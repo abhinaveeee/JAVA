@@ -1,0 +1,40 @@
+package OOPS26;
+import java.util.Scanner;
+class Employee{
+	int empid;
+	String empname;
+	double salary;
+	
+	Employee(int id,String name,double sal){
+		empid= id;
+		empname=name;
+		salary=sal;}
+	void display() {
+		System.out.println("employee id"+empid);
+		System.out.println("Employee name"+ empname);
+		System.out.println("Salary"+salary);
+		}}
+public class employee1 {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the name");
+		String name1=sc.nextLine();
+		System.out.println("Enter the id");
+		int id1=sc.nextInt();
+		System.out.println("Enter the salary");
+		double salary1=sc.nextDouble();
+		Employee e =new Employee(id1,name1,salary1);
+		sc.nextLine();
+		System.out.println("Enter the name");
+		String name2=sc.nextLine();
+		System.out.println("Enter the id");
+		int id2=sc.nextInt();
+		System.out.println("Enter the salary");
+		double salary2=sc.nextDouble();
+		Employee e2 =new Employee(id2,name2,salary2);
+		System.out.println("Employye 1:");
+		e.display();
+		System.out.println("Employye 2:");
+		e2.display();}
+}
