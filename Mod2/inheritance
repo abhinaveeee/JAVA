@@ -1,0 +1,29 @@
+package OOPS26;
+class AB{
+	int i,j;
+	void showij() {
+		System.out.println(i+""+ j);
+	}
+}
+class B extends AB{
+	int k;
+	void showk() {
+		System.out.println(i+" "+ j+" "+k);
+	}
+}
+
+public class Inher {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+B o=new B();
+o.i=1;
+o.j=2;
+o.k=3;
+o.showij();
+o.showk();
+
+
+	}
+
+}
