@@ -1,0 +1,23 @@
+package OOPS26;
+import java.util.Scanner;
+class circleop{
+	double radius;
+	circleop(double r){
+		 radius=r;
+	}
+	void calc() {
+		System.out.println("Area is"+ 3.14*radius*radius);
+		System.out.println("Circumference is:"+2*3.14*radius);
+	}}
+public class circle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the radius");
+		double r=sc.nextDouble();
+		
+		circleop c=new circleop(r);
+		c.calc();
+		}
+}
