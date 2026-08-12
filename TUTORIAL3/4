@@ -1,0 +1,27 @@
+
+package tutorial3;
+import java.util.Scanner;
+import java.util.Arrays;
+public class search {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner sc = new Scanner(System.in);
+
+	        int[] arr = {10, 20, 30, 40, 50};
+
+	        System.out.print("Enter a number: ");
+	        int num = sc.nextInt();
+
+	        int position = Arrays.binarySearch(arr, num);
+
+	        if (position >= 0) {
+	            System.out.println("Number found at position: " + (position + 1));
+	        } else {
+	            System.out.println("Number not found.");
+	        }
+
+
+	}
+
+}
