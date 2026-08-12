@@ -1,0 +1,24 @@
+package Lab1;
+import java.util.Scanner;
+public class leapyear {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scanner = new Scanner(System.in);
+			
+			System.out.print("Enter a year: ");
+			int year = scanner.nextInt();
+			
+			boolean isLeap = false;
+			
+			if ((year % 4 == 0 && year % 100 != 0) || year % 4 == 0) {
+				isLeap = true;
+			}
+			
+			if (isLeap) {
+				System.out.println(year + " is a LEAP year.");
+			} else {
+				System.out.println(year + " is NOT a lLeap year");
+	}
+
+	}}
