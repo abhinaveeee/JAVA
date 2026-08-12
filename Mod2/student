@@ -1,0 +1,25 @@
+package OOPS26;
+class stu{
+	String name,dept;
+	int roll;
+	stu(String name,String dept, int roll){
+		this.name=name;
+		this.dept=dept;
+		this.roll=roll;
+	}
+	void display(){
+System.out.println("name is"+ name);
+System.out.println("department is"+dept);
+System.out.println("roll no is"+roll);
+	}
+public class student1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+stu s= new stu("abc","cse",23);
+s.display();
+
+
+	}
+
+}}
